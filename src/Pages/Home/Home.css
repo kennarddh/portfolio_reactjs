@@ -1,0 +1,179 @@
+.home {
+	background-color: #272527;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 20px 150px 20px;
+	gap: 60px;
+}
+.home .image {
+	border-radius: 50%;
+	width: 285px;
+}
+.home .text {
+	color: white;
+	width: 285px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+.home .text .title {
+	margin-bottom: 10px;
+	font-size: 50px;
+}
+.home .text .description .item {
+	margin: 20px 0;
+}
+.proficiencies {
+	background-color: #1b1b1b;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 25px 50px;
+	color: white;
+	gap: 100px;
+}
+.proficiencies .title {
+	width: 25%;
+	font-size: 40px;
+	margin: 0;
+}
+.proficiencies .body {
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	column-gap: 100px;
+	row-gap: 75px;
+}
+.portfolio {
+	background-color: #272527;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 50px;
+	color: white;
+	gap: 50px;
+}
+.portfolio .title {
+	font-size: 40px;
+	margin: 0;
+}
+.portfolio .body {
+	display: grid;
+	grid-template-columns: 100%;
+	column-gap: 100px;
+	row-gap: 75px;
+}
+.about {
+	background-color: #1b1b1b;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: 25px 50px;
+	color: white;
+	gap: 100px;
+}
+.about .title {
+	width: 25%;
+	font-size: 40px;
+	margin: 0;
+}
+.about .body {
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	column-gap: 100px;
+	row-gap: 75px;
+}
+.contact {
+	background-color: #272527;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact .wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 25px;
+}
+.contact .wrap .title {
+	font-size: 40px;
+	margin: 0;
+}
+.contact .wrap .body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+@media (min-width: 1024px) {
+	.about {
+		min-height: 90vh;
+	}
+	.contact {
+		min-height: 90vh;
+	}
+}
+@media (max-width: 900px) {
+	.home {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.home .text {
+		align-items: center;
+	}
+	.home .text .description {
+		display: flex;
+		align-items: center;
+		justify-self: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	.home .image {
+		width: 215px;
+	}
+	.proficiencies .body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.proficiencies .title {
+		width: 100%;
+	}
+	.proficiencies {
+		flex-direction: column;
+		text-align: center;
+	}
+	.about .body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.about .title {
+		width: 100%;
+	}
+	.about {
+		flex-direction: column;
+		text-align: center;
+	}
+	.contact {
+		height: 80vh;
+	}
+}
+@media (orientation: landscape) and (max-width: 900px) {
+	.contact {
+		height: 150vh;
+	}
+}
