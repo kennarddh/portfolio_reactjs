@@ -1,29 +1,29 @@
 import React from 'react'
 
 // utils
-import Title from '../../Utils/Title'
+import Title from 'Utils/Title'
 
 // components
-import Navbar from '../../Components/Navbar/Navbar'
-import ScrollToTopButton from '../../Components/ScrollToTopButton/ScrollToTopButton'
+import Navbar from 'Components/StyledComponents/Navbar'
+import ScrollToTopButton from 'Components/StyledComponents/ScrollToTopButton'
 
 // proficiencies
-import ProficienciesCard from '../../Components/Proficiencies/Card/Card'
-import ProficienciesInnerCard from '../../Components/Proficiencies/InnerCard/InnerCard'
+import ProficienciesCard from 'Components/StyledComponents/Proficiencies/Card'
+import ProficienciesInnerCard from 'Components/StyledComponents/Proficiencies/InnerCard'
 
 // portfolio
-import PortfolioCard from '../../Components/Portfolio/Card/Card'
-import PortfolioInnerCard from '../../Components/Portfolio/InnerCard/InnerCard'
+import PortfolioCard from 'Components/StyledComponents/Portfolio/Card'
+import PortfolioInnerCard from 'Components/StyledComponents/Portfolio/InnerCard'
 
 // about
-import AboutCard from '../../Components/About/Card/Card'
-import AboutInnerCard from '../../Components/About/InnerCard/InnerCard'
+import AboutCard from 'Components/StyledComponents/About/Card'
+import AboutInnerCard from 'Components/StyledComponents/About/InnerCard'
 
 // contact
-import ContactCard from '../../Components/Contact/Card/Card'
+import ContactCard from 'Components/StyledComponents/Contact/Card'
 
-// styling
-import './Home.css'
+// Styled Components
+import Styled from './Styled'
 
 const Home = () => {
 	Title('Home')
@@ -31,179 +31,160 @@ const Home = () => {
 	return (
 		<>
 			<Navbar />
-			<section className='home'>
-				<img
+			<Styled.Home.Container>
+				<Styled.Home.Image
 					src='assets/image/no-image.jpeg'
 					alt='profile'
-					className='image'
 				/>
-				<div className='text'>
-					<h1 className='title'>Name</h1>
-					<div className='description'>
-						<p className='item'>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit.
-						</p>
-						<p className='item'>Lorem, ipsum dolor.</p>
-					</div>
-				</div>
-			</section>
-			<section className='proficiencies' id='proficiencies'>
-				<h2 className='title'>Proficiencies</h2>
-				<div className='body'>
-					<ProficienciesCard Name='Front End'>
+				<Styled.Home.Text>
+					<Styled.Home.Title>Kennard</Styled.Home.Title>
+					<Styled.Home.Description>
+						<Styled.Home.DescriptionItem>
+							fullstack software enginer
+						</Styled.Home.DescriptionItem>
+					</Styled.Home.Description>
+				</Styled.Home.Text>
+			</Styled.Home.Container>
+			<Styled.Proficiencies.Container id='proficiencies'>
+				<Styled.Proficiencies.Title>
+					Proficiencies
+				</Styled.Proficiencies.Title>
+				<Styled.Proficiencies.Body>
+					<ProficienciesCard title='Front End'>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='javascript'
+							title='javascript'
 						/>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='react js'
+							title='react js'
 						/>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='react native'
+							title='react native'
 						/>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='bootstrap'
+							title='bootstrap'
 						/>
 					</ProficienciesCard>
-					<ProficienciesCard Name='Back End'>
+					<ProficienciesCard title='Back End'>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
-						/>
-						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
-						/>
-						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
-						/>
-						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='php'
+							title='php'
 						/>
 					</ProficienciesCard>
-					<ProficienciesCard Name='Other'>
+					<ProficienciesCard title='Other'>
 						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
-						/>
-						<ProficienciesInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='mysql'
+							title='mysql'
 						/>
 					</ProficienciesCard>
-				</div>
-			</section>
-			<section className='portfolio' id='portfolio'>
-				<h2 className='title'>Portfolio</h2>
-				<div className='body'>
-					<PortfolioCard Name='Web Site'>
+				</Styled.Proficiencies.Body>
+			</Styled.Proficiencies.Container>
+			<Styled.Portfolio.Container id='portfolio'>
+				<Styled.Portfolio.Title>Portfolio</Styled.Portfolio.Title>
+				<Styled.Portfolio.Body>
+					<PortfolioCard title='Web Site'>
 						<PortfolioInnerCard
-							Link=''
-							ImageLocation='assets/image/no-image-dark.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							link=''
+							imageLocation='assets/image/no-image-dark.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<PortfolioInnerCard
-							Link=''
-							ImageLocation='assets/image/no-image-dark.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							link=''
+							imageLocation='assets/image/no-image-dark.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<PortfolioInnerCard
-							Link=''
-							ImageLocation='assets/image/no-image-dark.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							link=''
+							imageLocation='assets/image/no-image-dark.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 					</PortfolioCard>
-					<PortfolioCard Name='Analytics'>
+					<PortfolioCard title='Analytics'>
 						<PortfolioInnerCard
-							Link=''
-							ImageLocation='assets/image/no-image-dark.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							link=''
+							imageLocation='assets/image/no-image-dark.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<PortfolioInnerCard
-							Link=''
-							ImageLocation='assets/image/no-image-dark.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							link=''
+							imageLocation='assets/image/no-image-dark.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 					</PortfolioCard>
-				</div>
-			</section>
-			<section className='about' id='about'>
-				<h2 className='title'>About</h2>
-				<div className='body'>
-					<AboutCard Name='Education'>
+				</Styled.Portfolio.Body>
+			</Styled.Portfolio.Container>
+			<Styled.About.Container id='about'>
+				<Styled.About.Title>About</Styled.About.Title>
+				<Styled.About.Body>
+					<AboutCard title='Education'>
 						<AboutInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<AboutInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 					</AboutCard>
-					<AboutCard Name='Experiences'>
+					<AboutCard title='Experiences'>
 						<AboutInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<AboutInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 						<AboutInnerCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='Lorem'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='Lorem'
 						/>
 					</AboutCard>
-				</div>
-			</section>
-			<section className='contact'>
-				<div className='wrap'>
-					<h2 className='title' id='contact'>Reach Me on</h2>
-					<div className='body'>
+				</Styled.About.Body>
+			</Styled.About.Container>
+			<Styled.Contact.Container>
+				<Styled.Contact.Wrap>
+					<Styled.Contact.Title id='contact'>
+						Reach Me on
+					</Styled.Contact.Title>
+					<Styled.Contact.Body>
 						<ContactCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='lorem ipsum dolor'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='lorem ipsum dolor'
 						/>
 						<ContactCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='lorem ipsum dolor'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='lorem ipsum dolor'
 						/>
 						<ContactCard
-							ImageLocation='assets/image/no-image.jpeg'
-							ImageAlt='card image'
-							Name='lorem ipsum dolor'
+							imageLocation='assets/image/no-image.jpeg'
+							imageAlt='card image'
+							title='lorem ipsum dolor'
 						/>
-					</div>
-				</div>
-			</section>
+					</Styled.Contact.Body>
+				</Styled.Contact.Wrap>
+			</Styled.Contact.Container>
 			<ScrollToTopButton />
 		</>
 	)

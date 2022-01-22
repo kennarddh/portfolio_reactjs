@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
-// components
+import styled from 'styled-components'
 
 // AOS
 import AOS from 'aos'
@@ -10,8 +10,26 @@ import 'aos/dist/aos.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
-// styling
-import './ScrollToTopButton.css'
+const ScrollToTopButtonContainer = styled.div`
+	width: clamp(20px, 50px, 60px);
+	height: clamp(20px, 50px, 60px);
+	opacity: 0.4;
+	background-color: #9b9b9b;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	cursor: pointer;
+`
+
+const ScrollToTopButtonWrapper = styled.div`
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	opacity: 1;
+`
 
 const ScrollToTopButton = () => {
 	const [IsShowing, SetIsShowing] = useState(false)
@@ -37,15 +55,14 @@ const ScrollToTopButton = () => {
 	return (
 		<>
 			{IsShowing && (
-				<div
+				<ScrollToTopButtonContainer
 					data-aos='fade-up'
-					className='scroll-to-top-button'
 					onClick={ScrollToTop}
 				>
-					<div className='wrap'>
+					<ScrollToTopButtonWrapper>
 						<FontAwesomeIcon icon={faArrowUp} />
-					</div>
-				</div>
+					</ScrollToTopButtonWrapper>
+				</ScrollToTopButtonContainer>
 			)}
 		</>
 	)
