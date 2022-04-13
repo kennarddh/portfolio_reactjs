@@ -52,36 +52,31 @@ const Home = () => {
 				<Styled.Proficiencies.Body>
 					<ProficienciesCard title='Front End'>
 						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
+							imageLocation='assets/image/logo/javascript.png'
 							imageAlt='javascript'
 							title='javascript'
 						/>
 						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
+							imageLocation='assets/image/logo/reactjs.png'
 							imageAlt='react js'
 							title='react js'
 						/>
 						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='react native'
-							title='react native'
-						/>
-						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
+							imageLocation='assets/image/logo/bootstrap.svg'
 							imageAlt='bootstrap'
 							title='bootstrap'
 						/>
 					</ProficienciesCard>
 					<ProficienciesCard title='Back End'>
 						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
+							imageLocation='assets/image/logo/php.png'
 							imageAlt='php'
 							title='php'
 						/>
 					</ProficienciesCard>
 					<ProficienciesCard title='Other'>
 						<ProficienciesInnerCard
-							imageLocation='assets/image/no-image.jpeg'
+							imageLocation='assets/image/logo/mariadb.png'
 							imageAlt='mysql'
 							title='mysql'
 						/>
@@ -92,32 +87,6 @@ const Home = () => {
 				<Styled.Portfolio.Title>Portfolio</Styled.Portfolio.Title>
 				<Styled.Portfolio.Body>
 					<PortfolioCard title='Web Site'>
-						<PortfolioInnerCard
-							link=''
-							imageLocation='assets/image/no-image-dark.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
-						<PortfolioInnerCard
-							link=''
-							imageLocation='assets/image/no-image-dark.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
-						<PortfolioInnerCard
-							link=''
-							imageLocation='assets/image/no-image-dark.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
-					</PortfolioCard>
-					<PortfolioCard title='Analytics'>
-						<PortfolioInnerCard
-							link=''
-							imageLocation='assets/image/no-image-dark.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
 						<PortfolioInnerCard
 							link=''
 							imageLocation='assets/image/no-image-dark.jpeg'
@@ -136,23 +105,8 @@ const Home = () => {
 							imageAlt='card image'
 							title='Lorem'
 						/>
-						<AboutInnerCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
 					</AboutCard>
 					<AboutCard title='Experiences'>
-						<AboutInnerCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
-						<AboutInnerCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='Lorem'
-						/>
 						<AboutInnerCard
 							imageLocation='assets/image/no-image.jpeg'
 							imageAlt='card image'
@@ -168,19 +122,9 @@ const Home = () => {
 					</Styled.Contact.Title>
 					<Styled.Contact.Body>
 						<ContactCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='lorem ipsum dolor'
-						/>
-						<ContactCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='lorem ipsum dolor'
-						/>
-						<ContactCard
-							imageLocation='assets/image/no-image.jpeg'
-							imageAlt='card image'
-							title='lorem ipsum dolor'
+							imageLocation='assets/image/logo/github.png'
+							imageAlt='Github'
+							title='Github'
 						/>
 					</Styled.Contact.Body>
 				</Styled.Contact.Wrap>
